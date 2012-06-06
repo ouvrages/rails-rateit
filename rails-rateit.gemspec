@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/rails-rateit/version', __FILE__)
+require File.expand_path('../lib/rateit/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Michael Witrant"]
-  gem.email         = ["michael@ouvrages-web.fr"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["Ouvrages"]
+  gem.email         = ["contact@ouvrages-web.fr"]
+  gem.description   = %q{Rails wrapper for the jQuery RateIt plugin}
+  gem.summary       = %q{Rails assets pipeline compatible version of the jQuery RateIt plugin}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "rails-rateit"
   gem.require_paths = ["lib"]
-  gem.version       = Rails::Rateit::VERSION
+  gem.version       = Rateit::VERSION
 end

@@ -1,5 +1,4 @@
-require "rails-rateit/version"
-require 'rails/railtie'
+require "rateit/version"
 
 module Rateit
   module Rails

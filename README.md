@@ -1,6 +1,6 @@
-# Rails::Rateit
+# Rails Rateit
 
-TODO: Write a gem description
+Rails wrapper for the jQuery RateIt plugin
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the javascript and stylesheets :
+
+    $ rails generate rateit:install
+
+In you view, use the rateit_tag helper :
+
+    <%= form.number_field(:rating, min: 0, max: 10, step: 1) %>
+    <%= rateit_tag(backingfld: "#my_object_rating", max: 10, min: 0, step: 1, resetable: "false") %>
 
 ## Contributing
 
