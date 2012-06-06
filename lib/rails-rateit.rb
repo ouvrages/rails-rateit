@@ -1,7 +1,8 @@
 require "rails-rateit/version"
 
-module Rails
-  module Rateit
-    # Your code goes here...
+module Rateit
+  module Rails
+    class Engine < ::Rails::Engine
+    end
   end
 end
