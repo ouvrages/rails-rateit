@@ -7,7 +7,7 @@ module Rateit
           tag_options["data-rateit-#{name}"] = value
         end
         
-        tag(:div, tag_options)
+        content_tag(:div, "", tag_options)
       end
     end
   end
